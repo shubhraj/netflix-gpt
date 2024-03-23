@@ -1,11 +1,7 @@
-import './App.css';
+import Body from './components/Body';
 
 function App() {
-  return (
-    <div className="App">
-      Lets build netflix gpt
-    </div>
-  );
+  return <Body/>;
 }
 
 export default App;
