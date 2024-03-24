@@ -5,4 +5,4 @@ worklogs
 3. build login page
     - configure routing using react-router-dom -> createBrowserRouter and RouterProvider
 4. create login form
-5. sign up form
+5. sign up form ( using existing login form ) 
