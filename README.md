@@ -15,4 +15,5 @@ worklogs
         - Project Console: https://console.firebase.google.com/project/netflixgpt-f2c75/overview
         - Hosting URL: https://netflixgpt-f2c75.web.app
     - create signup -> create user account in firebase
-9.
+9. setup redux store with userSlice to store user login info 
+10.
