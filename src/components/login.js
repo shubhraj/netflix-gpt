@@ -1,16 +1,20 @@
 import { checkValidData } from "../utils/validate";
 import Header from "./Header";
 import { useRef, useState } from "react";
-import {  createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {  createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
   const navigate = useNavigate();
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
+  const dispatch = useDispatch();
 
   const toggleSignInform = () => {
     setIsSignIn(!isSignIn);
@@ -29,7 +33,18 @@ const Login = () => {
             .then((userCredential) => {
               // Signed up 
               const user = userCredential.user;
-              console.log(user);
+              updateProfile(user, {
+                displayName: name.current.value
+              }).then(() => {
+                const {uid, email, displayName } = user;
+                dispatch(addUser({uid:uid, email:email, displayName:displayName}));
+                navigate("/browse");
+                // Profile updated!
+                // ...
+              }).catch((error) => {
+                // An error occurred
+                // ...
+              });
               navigate("/browse");
             })
             .catch((error) => {
@@ -75,6 +90,7 @@ const Login = () => {
         </h1>
         
         { !isSignIn && <input
+          ref={name}
           type="text"
           placeholder="Name"
           className="p-4 my-4 w-full bg-transparent border border-solid border-gray-500 rounded"
@@ -82,6 +98,7 @@ const Login = () => {
 
         <input
           required
+          
           ref={email}
           type="text"
           placeholder="Email address"
@@ -90,6 +107,7 @@ const Login = () => {
         <input
           required
           ref={password}
+          value={"Shubh@123"}
           type="password"
           placeholder="Password"
           className="p-4 my-4 w-full bg-transparent border border-solid border-gray-500 rounded"
