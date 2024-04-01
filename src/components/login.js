@@ -5,6 +5,7 @@ import {  createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProf
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { bgCover } from "../utils/constants";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -73,8 +74,7 @@ const Login = () => {
       <div className="bg-cover block h-[100%] absolute w-[100%] min-h-[100vh]">
         <img
           className="min-h-[100%] min-w-[100%]"
-          src="
-                https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={bgCover}
           alt="logo"
         />
       </div>

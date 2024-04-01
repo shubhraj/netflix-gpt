@@ -21,5 +21,6 @@ worklogs
       secure the routes : 
         a. if not logged in then user should not be able to navigate to "/browse" route.
         b. if user is logged in then should not be able to navigate to "/login" route.
-
-12. fetch movie from TMDB
+12 . Unsubscribed to the onAuthStateChanged Callback.    
+13. use constants file and store URLs/HardCoded values in that file
+14. fetch movie from TMDB
