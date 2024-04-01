@@ -23,4 +23,6 @@ worklogs
         b. if user is logged in then should not be able to navigate to "/login" route.
 12 . Unsubscribed to the onAuthStateChanged Callback.    
 13. use constants file and store URLs/HardCoded values in that file
-14. fetch movie from TMDB
+14. fetch movie from TMDB : https://developer.themoviedb.org/reference/movie-now-playing-list
+15. 
+ 
