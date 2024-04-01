@@ -16,4 +16,10 @@ worklogs
         - Hosting URL: https://netflixgpt-f2c75.web.app
     - create signup -> create user account in firebase
 9. setup redux store with userSlice to store user login info 
-10.
+10. signout workflow and update user data
+11. Bugfix :
+      secure the routes : 
+        a. if not logged in then user should not be able to navigate to "/browse" route.
+        b. if user is logged in then should not be able to navigate to "/login" route.
+
+12. fetch movie from TMDB
