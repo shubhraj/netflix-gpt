@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
-./src/utils/constants.js
+.firebase/*
+.firebase/hosting.YnVpbGQ.cache

@@ -22,6 +22,7 @@ const Header = () => {
 
     //this hook will take care of all dispath related to user store
   useEffect(() => {
+    //read firebase docs to understand it better, onAuthStateChanged returns unsubscribe function
     const unsubscribe =  onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
