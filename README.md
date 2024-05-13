@@ -25,5 +25,9 @@ worklogs
 13. use constants file and store URLs/HardCoded values in that file
 14. fetch movie from TMDB : https://developer.themoviedb.org/reference/movie-now-playing-list
 15. Setup the browse page 
-16. main container is done now -> secondary is TBD
+16. Render trailer in background of main container
+17. create movie suggestion list (secondary list)
+18. populate list of different movies like : now playing, popular, top rated, etc 
+    API : https://developer.themoviedb.org/reference/movie-upcoming-list
+19. 
  
