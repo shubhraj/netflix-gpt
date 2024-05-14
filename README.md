@@ -29,6 +29,12 @@ worklogs
 17. create movie suggestion list (secondary list)
 18. populate list of different movies like : now playing, popular, top rated, etc 
     API : https://developer.themoviedb.org/reference/movie-upcoming-list
-19. 
+19. Create GPT Components 
+20. build GPT Search Button
+21. create GPT Search Bar
+22.(Bonus) Added multilingual support -> English, Hindi, Spanish
+23. Integrate GPT API's
+
+
 
  
