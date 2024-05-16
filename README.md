@@ -34,7 +34,6 @@ worklogs
 21. create GPT Search Bar
 22.(Bonus) Added multilingual support -> English, Hindi, Spanish
 23. Integrate GPT API's
-
-
+24. Display Results on Movie Suggestions Page
 
  
