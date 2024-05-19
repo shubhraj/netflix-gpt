@@ -32,8 +32,10 @@ worklogs
 19. Create GPT Components 
 20. build GPT Search Button
 21. create GPT Search Bar
-22.(Bonus) Added multilingual support -> English, Hindi, Spanish
+22. (Bonus) Added multilingual support -> English, Hindi, Spanish
 23. Integrate GPT API's
-24. Display Results on Movie Suggestions Page
-
- 
+24. Display Results on Movie Suggestions Page : reused movie list component
+25. Memoization
+26. Adding .env file
+27. Fixing the styling and make the webapp responsive
+28. add favicon and text
